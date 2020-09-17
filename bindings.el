@@ -105,22 +105,22 @@
         :desc "🔮::copy"                                "m" #'lsp-copy
 
 
-        :prefix("lt . lsp-treemacs")
-        :desc "🌳~>type-hierarchy"             "h" #'lsp-treemacs-type-hierarchy
-        :desc "🌳~>errors-list"                "e" #'lsp-treemacs-errors-list
-        :desc "🌳~>errors-list-mode"           "E" #'lsp-treemacs-errors-list-mode
-        :desc "🌳~>open-error"                 "o" #'lsp-treemacs-open-error
-        :desc "🌳~>goto-symbol"                "s" #'lsp-treemacs-goto-symbol
-        :desc "🌳~>initialize"                 "I" #'lsp-treemacs-initialize
-        :desc "🌳~>references"                 "r" #'lsp-treemacs-references
-        :desc "🌳~>sync-mode"                  "S" #'lsp-treemacs-sync-mode
-        :desc "🌳~>generic-mode"               "G" #'lsp-treemacs-generic-mode
-        :desc "🌳~>sort-by-kind"               "k" #'lsp-treemacs-sort-by-kind
-        :desc "🌳~>sort-by-name"               "n" #'lsp-treemacs-sort-by-name
-        :desc "🌳~>sort-by-position"           "p" #'lsp-treemacs-sort-by-position
-        :desc "🌳~>open-file"                  "f" #'lsp-treemacs-open-file
-        :desc "🌳~>quick-fix"                  "q" #'lsp-treemacs-quick-fix
-        :desc "🌳~>implementations"            "i" #'lsp-treemacs-implementations
+        :prefix("lt" . "🌳 lsp-treemacs")
+        :desc "🌳::type-hierarchy"             "h" #'lsp-treemacs-type-hierarchy
+        :desc "🌳::errors-list"                "e" #'lsp-treemacs-errors-list
+        :desc "🌳::errors-list-mode"           "E" #'lsp-treemacs-errors-list-mode
+        :desc "🌳::open-error"                 "o" #'lsp-treemacs-open-error
+        :desc "🌳::goto-symbol"                "s" #'lsp-treemacs-goto-symbol
+        :desc "🌳::initialize"                 "I" #'lsp-treemacs-initialize
+        :desc "🌳::references"                 "r" #'lsp-treemacs-references
+        :desc "🌳::sync-mode"                  "S" #'lsp-treemacs-sync-mode
+        :desc "🌳::generic-mode"               "G" #'lsp-treemacs-generic-mode
+        :desc "🌳::sort-by-kind"               "k" #'lsp-treemacs-sort-by-kind
+        :desc "🌳::sort-by-name"               "n" #'lsp-treemacs-sort-by-name
+        :desc "🌳::sort-by-position"           "p" #'lsp-treemacs-sort-by-position
+        :desc "🌳::open-file"                  "f" #'lsp-treemacs-open-file
+        :desc "🌳::quick-fix"                  "q" #'lsp-treemacs-quick-fix
+        :desc "🌳::implementations"            "i" #'lsp-treemacs-implementations
         ))
 
 

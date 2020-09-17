@@ -1,8 +1,5 @@
 ;;; init.el -*- lexical-binding: t; -*-
 
-;; This file controls what Doom modules are enabled and what order they load
-;; in. Remember to run 'doom sync' after modifying it!
-
 ;; NOTE Press 'SPC h d h' (or 'C-h d h' for non-vim users) to access Doom's
 ;;      documentation. There you'll find a "Module Index" link where you'll find
 ;;      a comprehensive list of Doom's modules and what flags they support.
@@ -17,9 +14,8 @@
 (doom! :input
 
        :completion
-       company           ; the ultimate code completion backend
+       company
        ivy
-       ;;helm              ; the *other* search engine for love and life
 
        :ui
        ligatures
@@ -34,18 +30,13 @@
        workspaces          ; tab emulation, persistence & separate workspaces
 
        :editor
-       (evil +everywhere); come to the dark side, we have cookies
+       (evil +everywhere)
+       (format +onsave)
+       snippets
+       multiple-cursors
        file-templates    ; auto-snippets for empty files
        fold              ; (nigh) universal code folding
-       snippets          ; my elves. They type so I don't have to
-       ;;(format +onsave)  ; automated prettiness
-       ;;god               ; run Emacs commands without modifier keys
-       ;;lispy             ; vim for lisp, for people who don't like vim
-       ;;multiple-cursors  ; editing in many places at once
-       ;;objed             ; text object editing for the innocent
-       ;;parinfer          ; turn lisp into python, sort of
-       ;;rotate-text       ; cycle region at point between text candidates
-       ;;word-wrap         ; soft wrapping with language-aware indent
+       word-wrap         ; soft wrapping with language-aware indent
 
        :emacs
        dired             ; making dired pretty [functional]
@@ -56,44 +47,31 @@
        :term
        eshell            ; the elisp shell that works everywhere
 
-       :checkers
-
        :tools
-       editorconfig
        (eval +overlay)     ; run code, run (also, repls)
+       (lsp +peek)
+       editorconfig
        lookup              ; navigate your code and its documentation
-       magit               ; a git porcelain for Emacs
+       magit
 
        :os
        (:if IS-MAC macos)  ; improve compatibility with macOS
-       ;;tty               ; improve the terminal Emacs experience
 
        :lang
+       (javascript +lsp)
+       (org +pomodoro) ;;+roam +journal +present
+       (scala +lsp)
        elm
-       emacs-lisp          ; drown in parentheses
-       javascript          ; all(hope(abandon(ye(who(enter(here))))))
-       json                ; At least it ain't XML
-       markdown            ; writing docs for people to ignore
-       (org
-        ;;+roam
-        ;;+journal
-        ;;+present
-        +pomodoro)         ; organize your plain life in plain text
-       rest                ; Emacs as a REST client
-       scala
-       sh                  ; she sells {ba,z,fi}sh shells on the C xor
-       web                 ; the tubes
-
-       :email
-       ;;(mu4e +gmail)
-       ;;notmuch
-       ;;(wanderlust +gmail)
+       emacs-lisp
+       json
+       markdown
+       rest
+       sh
+       web
 
        :app
        calendar
-       ;;irc               ; how neckbeards socialize
-       ;;(rss +org)        ; emacs as an RSS reader
-       ;;twitter           ; twitter client https://twitter.com/vnought
+       irc
 
        :config
        (default +bindings +smartparens)

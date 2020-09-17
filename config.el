@@ -42,7 +42,7 @@
 ;;  :config
 ;;  (require 'org-roam-protocol))
 
- ;;(setq org-roam-capture-templates '(("d" "default" plain #'org-roam-capture--get-point "%?" :file-name "%<%Y%m%d%H%M%S>-${slug}" :head "#+title: ${title}" :unnarrowed t)))
+;;(setq org-roam-capture-templates '(("d" "default" plain #'org-roam-capture--get-point "%?" :file-name "%<%Y%m%d%H%M%S>-${slug}" :head "#+title: ${title}" :unnarrowed t)))
 
 ;;(use-package flycheck
 ;;  :init (global-flycheck-mode)

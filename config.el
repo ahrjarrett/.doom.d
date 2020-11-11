@@ -9,6 +9,23 @@
       user-mail-address "ahrjarrett@gmail.com")
 (setq display-line-numbers-type t)
 
+;;(use-package evil-escape
+;;  :after evil
+;;  :init
+;;  (setq evil-escape-excluded-states '(normal visual multiedit emacs motion)
+;;        evil-escape-excluded-major-modes '(neotree-mode)
+;;        evil-escape-key-sequence "C-g"
+;;        evil-escape-delay 0.05
+;;        )
+;;
+;;  ;; :general
+;;  ;; (:states '(insert replace visual operator)
+;;  ;;          "C-g" #'evil-escape)
+;;  :config
+;;  (evil-escape-mode 1)
+;;  ;; no `evil-escape' in minibuffer
+;;  (push #'minibufferp evil-escape-inhibit-functions))
+
 (setq org-directory "~/dev/org/"
       org-bullets-bullet-list '("⁖"))
 (require 'org-tempo)

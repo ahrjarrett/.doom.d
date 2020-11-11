@@ -31,9 +31,9 @@
 
        :editor
        (evil +everywhere)
-       (format +onsave)
+       ;;(format +onsave)
        snippets
-       multiple-cursors
+       ;;multiple-cursors
        file-templates    ; auto-snippets for empty files
        fold              ; (nigh) universal code folding
        word-wrap         ; soft wrapping with language-aware indent
